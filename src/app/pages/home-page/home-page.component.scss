@@ -1,0 +1,44 @@
+.main {
+    margin: 16px auto;
+    width: 100%;
+    max-width: 1200px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 16px;
+
+        .top__content {
+            &--title {
+                margin-top: 80px;
+                font-size: 42px;
+                font-weight: 700;
+            }
+
+            &--description {
+                margin-top: 24px;
+                font-size: 20px;
+                color: #979797;
+
+                .link {
+                    color: #dd0031;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__filter {
+        margin-bottom: 48px;
+        display: flex;
+        gap: 24px;
+
+        .filter__select {
+            width: 100%;
+            max-width: 200px;
+            height: 32px;
+            border: #d9d9d9 1px solid;
+            border-radius: 4px;
+        }
+    }
+}
