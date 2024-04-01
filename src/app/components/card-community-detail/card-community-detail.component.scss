@@ -4,9 +4,18 @@
     display: flex;
     gap: 24px;
 
+    @media screen and (max-width: 768px) {
+        padding: 16px 0px;
+    }
+
     &__icon {
         width: 144px;
         height: 144px;
+
+        @media screen and (max-width: 768px) {
+            width: 60px;
+            height: 60px;
+        }
     }
 
     &__content {
@@ -14,6 +23,7 @@
         &--title {
             font-size: 20px;
             margin-bottom: 16px;
+
 
             a {
                 color: #000000;
@@ -29,6 +39,10 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
+
+            @media screen and (max-width: 768px) {
+                -webkit-line-clamp: 4;
+            }
         }
 
         &--place {

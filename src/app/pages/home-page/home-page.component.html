@@ -18,11 +18,11 @@
             <option [value]="item">{{item}}</option>
             }
         </select>
-        <select class="filter__select" aria-placeholder="Todos las tecnologías">
+        <!-- <select class="filter__select" aria-placeholder="Todos las tecnologías">
             <option value="all">Todos las tecnologías</option>
-        </select>
+        </select> -->
     </div>
-    <div class="listCommunity">
+    <div class="main__listCommunity">
         @for (item of communityList; track item.name) {
         <app-card-community-detail [item]="item" />
         }

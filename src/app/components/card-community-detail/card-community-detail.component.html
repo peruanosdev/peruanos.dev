@@ -1,10 +1,14 @@
 <article class="card">
-    <img class="card__icon" src="./assets/img/logo-community.svg" [alt]="item.name" alt="Icon Pin">
+    <img loading="lazy" class="card__icon" src="./assets/img/logo-community.svg" [alt]="item.name" alt="Icon Pin">
     <div class="card__content">
         <h2 class="card__content--title">
             <a [href]="item.url" target="_blank">{{ item.name }}</a>
         </h2>
-        <p class="card__content--description">{{ item.description }}</p>
+        <p class="card__content--description">Somos la comunidad de WordPress en Cusco. Reunimos a desarrolladores,
+            diseñadores, emprendedores, marketeros y a toda
+            persona que usa WordPress, con la finalidad de compartir conocimientos y experiencias, y conocer a otras
+            personas con
+            los mismos intereses. Esta comunidad está abierta para todos.</p>
         <div class="card__content--place">
             <img class="icon" src="./assets/img/icon-pin.svg" alt="Icon Pin">
             <span class="place">{{ item.city }}</span>

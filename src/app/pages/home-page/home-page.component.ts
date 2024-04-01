@@ -22,7 +22,7 @@ export class HomePageComponent {
 
   getListCities(communities: ICommunity[]) {
     const cities = new Set();
-    communities.forEach(item => {
+    communities.forEach((item: ICommunity) => {
       cities.add(item.city);
     });
     return Array.from(cities);
