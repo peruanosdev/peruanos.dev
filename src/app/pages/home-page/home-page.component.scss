@@ -9,16 +9,41 @@
         margin-bottom: 16px;
 
         .top__content {
+            background-image: url('/assets/img/nazca.svg');
+            background-repeat: no-repeat;
+            background-position: right top;
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+                padding: 0px 24px;
+                background-size: 75%;
+                background-position: right -100% top 10%;
+            }
+
             &--title {
                 margin-top: 80px;
                 font-size: 42px;
                 font-weight: 700;
+
+                @media screen and (max-width: 768px) {
+                    margin-top: 40px;
+                    font-size: 28px;
+                }
             }
 
             &--description {
                 margin-top: 24px;
                 font-size: 20px;
                 color: #979797;
+                width: 50%;
+                margin-bottom: 132px;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 16px;
+                    width: 80%;
+                    max-width: 300px;
+                    margin-bottom: 48px;
+                }
 
                 .link {
                     color: #dd0031;
@@ -32,6 +57,10 @@
         margin-bottom: 48px;
         display: flex;
         gap: 24px;
+
+        @media screen and (max-width: 768px) {
+            padding: 0px 24px;
+        }
 
         .filter__select {
             width: 100%;
