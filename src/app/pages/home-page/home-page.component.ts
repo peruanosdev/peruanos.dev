@@ -4,13 +4,14 @@ import { FooterComponent } from "../../components/footer/footer.component";
 import { CardCommunityDetailComponent } from "../../components/card-community-detail/card-community-detail.component";
 import { dataCommunities } from '../../../../_data/communities';
 import { ICommunity } from '../../../../model/community.model';
+import { CardContributorsComponent } from "../../components/card-contributors/card-contributors.component";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
-  imports: [HeaderComponent, FooterComponent, CardCommunityDetailComponent]
+  imports: [HeaderComponent, FooterComponent, CardCommunityDetailComponent, CardContributorsComponent]
 })
 export class HomePageComponent {
   communityList = dataCommunities;
