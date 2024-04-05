@@ -3,10 +3,10 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 
 export const routes: Routes = [{
     path: '',
-    redirectTo: 'home',
+    redirectTo: '/',
     pathMatch: 'full',
 }, {
-    path: 'home',
+    path: '/',
     component: HomePageComponent,
 }, {
     path: '**',
