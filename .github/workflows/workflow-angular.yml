@@ -20,11 +20,11 @@ jobs:
       - name: Build app bundle
         run: npm run build:prod
       - name: Rename index for routing
-        run: mv dist/angular-poc/index.html dist/angular-poc/404.html
+        run: mv dist/peruanos.github.io/index.html dist/peruanos.github.io/404.html
       # Deploy to Github pages
       - name: Deploy to Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          build_dir: dist/angular-poc
+          build_dir: dist/peruanos.github.io
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
