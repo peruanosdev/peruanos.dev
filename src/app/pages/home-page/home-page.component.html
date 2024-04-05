@@ -13,8 +13,8 @@
         </div>
     </section>
     <div class="main__filter">
-        <select class="filter__select" aria-placeholder="Ciudad">
-            <option value="">Todas las ciudades</option>
+        <select class="filter__select" aria-placeholder="Ciudad" (change)="filterByCity($event)">
+            <option value="all">Todas las ciudades</option>
             @for (item of citiesList; track item) {
             <option [value]="item">{{item}}</option>
             }
