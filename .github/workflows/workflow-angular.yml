@@ -1,0 +1,30 @@
+name: Build and Deploy
+on: 
+  pull_request:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_test_action:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - run: |
+        npm install
+        npm run all
+
+
+  test_action_and_deploy_demo: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: 'Deploy demo app using action'
+      uses: ./
+      with:
+        github_access_token: ${{ secrets.ACCESS_TOKEN }}
+        build_configuration: 
+        base_href: /angular-deploy-gh-pages-actions/
+        deploy_branch: gh-pages 
+        angular_dist_build_folder: jokester/dist/jokester
+        angular_project_dir: jokester
