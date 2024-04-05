@@ -15,7 +15,7 @@ import { FormsModule } from '@angular/forms';
   imports: [HeaderComponent, FooterComponent, CardCommunityDetailComponent, CardContributorsComponent, FormsModule]
 })
 export class HomePageComponent {
-  communityList = dataCommunities;
+  communityList = this.orderAlphabetically(dataCommunities);
   citiesList;
 
   constructor() {
@@ -32,9 +32,14 @@ export class HomePageComponent {
 
   filterByCity(event: any) {
     if (event.target.value === 'all') {
-      this.communityList = dataCommunities;
+      this.communityList = this.orderAlphabetically(dataCommunities);
       return;
     }
-    this.communityList = dataCommunities.filter((item: ICommunity) => item.city === event.target.value);
+    this.communityList = this.orderAlphabetically(dataCommunities.filter((item: ICommunity) => item.city === event.target.value));
+
+  }
+
+  orderAlphabetically(communities: ICommunity[]) {
+    return communities.sort((a, b) => a.name.localeCompare(b.name));
   }
 }
