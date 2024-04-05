@@ -20,7 +20,7 @@ jobs:
       - name: Build app bundle
         run: npm run build:prod
       - name: Rename index for routing
-        run: mv dist/peruanos.github.io/index.html dist/peruanos.github.io/404.html
+        run: mv dist/peruanos.github.io/browser/index.html dist/peruanos.github.io/browser/404.html
       # Deploy to Github pages
       - name: Deploy to Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
