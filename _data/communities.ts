@@ -299,16 +299,22 @@ export const dataCommunities: ICommunity[] = [
   {
     name: "GDG Trujillo",
     url: "https://www.meetup.com/GDG-Trujillo/",
-    description: "", image: "", city: "Trujillo"
+    description: "",
+    image: "",
+    city: "Lima"
   },
   {
     name: "WordPress Perú - Trujillo",
     url: "https://www.meetup.com/wpperu-trujillo/",
-    description: "", image: "", city: "Trujillo"
+    description: "",
+    image: "",
+    city: "Lima"
   },
   {
     name: "Mozilla Perú",
     url: "https://www.meetup.com/mozillaperu/",
-    description: "", image: "", city: "Lima"
+    description: "",
+    image: "",
+    city: "Lima"
   }
 ]
