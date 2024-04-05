@@ -18,7 +18,7 @@ jobs:
       - name: Install deps
         run: npm i
       - name: Build app bundle
-        run: npm run build:prod
+        run: npm run build
       - name: Rename index for routing
         run: mv dist/peruanos.github.io/index.html dist/peruanos.github.io/404.html
       # Deploy to Github pages
