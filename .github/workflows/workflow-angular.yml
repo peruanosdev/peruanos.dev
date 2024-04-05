@@ -12,8 +12,6 @@ jobs:
     - uses: actions/checkout@v3
     - run: |
         npm install
-        npm run all
-
 
   test_action_and_deploy_demo: 
     runs-on: ubuntu-latest
