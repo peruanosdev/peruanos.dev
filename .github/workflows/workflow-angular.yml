@@ -25,6 +25,6 @@ jobs:
       - name: Deploy to Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          build_dir: dist/peruanos.github.io
+          build_dir: dist/peruanos.github.io/browser/
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
