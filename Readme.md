@@ -1,27 +1,14 @@
-# PeruanosGithubIo
+# Peruanosdev 🚀
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+¡Hola!. Estamos creando un directorio con todas las comunidades de tecnología en el Perú.
 
-## Development server
+Si no encuentras tu comunidad, puedes agregarla desde [aquí](https://github.com/peruanosdev/peruanos.github.io/edit/master/_data/communities.json).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Configuración Local (Modo Desarrollo)
 
-## Code scaffolding
+Para levantar la aplicación localmemte sigue los siguientes pasos:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Asegúrate de tener instalado npm
+2. Instala las dependencias: `npm install`
+3. Empezar la app: `npm run start`
+4. Ir a la [app](http://localhost:4200/)
