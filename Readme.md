@@ -2,7 +2,7 @@
 
 ¡Hola!. Estamos creando un directorio con todas las comunidades de tecnología en el Perú.
 
-Si no encuentras tu comunidad, puedes agregarla desde [aquí](https://github.com/peruanosdev/peruanos.github.io/edit/master/_data/communities.json).
+Si no encuentras tu comunidad, puedes agregarla desde [aquí](https://github.com/peruanosdev/peruanos.github.io/edit/master/_data/communities.ts).
 
 ## Configuración Local (Modo Desarrollo)
 
