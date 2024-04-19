@@ -1,0 +1,32 @@
+<app-header />
+<main class="main">
+    <section class="main__top">
+        <div class="top__content">
+            <h1 class="top__content--title">Hola peruanos.dev</h1>
+            <p class="top__content--description">Estamos creando un directorio con todas las comunidades de tecnología
+                en el
+                Perú. Si no encuentras tu comunidad, puedes
+                agregarla desde <a class="link"
+                    href="https://github.com/peruanosdev/peruanos.github.io/edit/master/_data/communities.json"
+                    target="_blank">aquí</a>.</p>
+            <app-card-contributors />
+        </div>
+    </section>
+    <div class="main__filter">
+        <select class="filter__select" aria-placeholder="Ciudad" (change)="filterByCity($event)">
+            <option value="all">Todas las ciudades</option>
+            @for (item of citiesList; track item) {
+            <option [value]="item">{{item}}</option>
+            }
+        </select>
+        <!-- <select class="filter__select" aria-placeholder="Todos las tecnologías">
+            <option value="all">Todos las tecnologías</option>
+        </select> -->
+    </div>
+    <div class="main__listCommunity">
+        @for (item of communityList; track item.name) {
+        <app-card-community-detail [item]="item" />
+        }
+    </div>
+</main>
+<app-footer />

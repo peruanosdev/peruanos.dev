@@ -1,9 +1,0 @@
-url: https://peruanos.dev
-title: peruanos.dev
-theme: jekyll-theme-minimal
-
-events:
-  enabled: true
-  label: Proximos Eventos
-
-plugins: [jekyll-gh-contributors]

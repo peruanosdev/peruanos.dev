@@ -1,0 +1,10 @@
+<section class="contributors">
+    <h2 class="contributors__title">Colaboradores</h2>
+    <div class="contributors__list">
+        @for (item of listContributors; track item.login) {
+        <a class="contributors__list--item" target="_blank" [href]="item.html_url">
+            <img class="avatar" [src]="item.avatar_url" alt="User Github" [alt]="item.login">
+        </a>
+        }
+    </div>
+</section>

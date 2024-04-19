@@ -1,0 +1,13 @@
+<article class="card">
+    <img loading="lazy" class="card__icon" [src]="item.image" alt="Logo Community" [alt]="item.name">
+    <div class="card__content">
+        <h2 class="card__content--title">
+            <a [href]="item.url" target="_blank">{{ item.name }}</a>
+        </h2>
+        <p class="card__content--description">{{ item.description }}</p>
+        <div class="card__content--place">
+            <img class="icon" src="./assets/img/icon-pin.svg" alt="Icon Pin">
+            <span class="place">{{ item.city }}</span>
+        </div>
+    </div>
+</article>

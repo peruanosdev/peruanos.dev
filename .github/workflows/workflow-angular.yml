@@ -1,0 +1,30 @@
+name: Build and Deploy
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup nodejs
+        uses: actions/setup-node@v3.7.0
+        with:
+          node-version: "20"
+      - name: Install deps
+        run: npm i
+      - name: Build app bundle
+        run: npm run build:prod
+      - name: Rename index for routing
+        run: mv dist/peruanos.github.io/browser/index.html dist/peruanos.github.io/browser/404.html
+      # Deploy to Github pages
+      - name: Deploy to Pages
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          build_dir: dist/peruanos.github.io/browser/
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
